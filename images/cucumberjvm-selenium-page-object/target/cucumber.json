@@ -1,0 +1,292 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6053183066,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User can search with \"Google Search\"",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-with-\"google-search\"",
+        "after": [
+          {
+            "result": {
+              "duration": 1487624587,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5206773278,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on homepage",
+            "match": {
+              "location": "Search.i_open_google_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 285348302,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I type \"The name of the wind\" into the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The name of the wind",
+                  "offset": 8
+                }
+              ],
+              "location": "Search.i_search_text(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3773889657,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the Google Search button",
+            "match": {
+              "location": "Search.i_click_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95933563,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the search result page",
+            "match": {
+              "location": "Result.i_google_resultpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 71970751,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the first result is \"The Name of the Wind - Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Name of the Wind - Wikipedia",
+                  "offset": 21
+                }
+              ],
+              "location": "Result.i_check_first_result(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3134233890,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the first result link",
+            "match": {
+              "location": "Result.i_search_text()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86292405,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I go to the \"The Name of the Wind - Wikipedia\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Name of the Wind - Wikipedia",
+                  "offset": 13
+                }
+              ],
+              "location": "Result.i_goto_finalResult(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4578631095,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User can search by using the suggestions",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-by-using-the-suggestions",
+        "after": [
+          {
+            "result": {
+              "duration": 1476681907,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6468160655,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "Search.i_open_google_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238155184,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I type \"The name of the w\" into the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The name of the w",
+                  "offset": 8
+                }
+              ],
+              "location": "Search.i_search_text(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2077578587,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the Suggestions list is displayed",
+            "match": {
+              "location": "Search.suggestion_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9116943314,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on the first suggestion in the list",
+            "match": {
+              "location": "Search.i_select_first_item_from_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110245401,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I go to the search result page",
+            "match": {
+              "location": "Result.i_google_resultpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64137451,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the first result is \"The Name of the Wind - Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Name of the Wind - Wikipedia",
+                  "offset": 21
+                }
+              ],
+              "location": "Result.i_check_first_result(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3332490069,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on the first result link",
+            "match": {
+              "location": "Result.i_search_text()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84733751,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I go to the \"The Name of the Wind - Wikipedia\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Name of the Wind - Wikipedia",
+                  "offset": 13
+                }
+              ],
+              "location": "Result.i_goto_finalResult(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Homepage Search",
+    "description": "",
+    "id": "google-homepage-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/GoogleHome.feature"
+  }
+]
